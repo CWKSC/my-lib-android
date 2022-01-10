@@ -1,0 +1,3 @@
+rootProject.name = "CwkscLibAndroid"
+include ':app'
+include ':android'
