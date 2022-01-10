@@ -8,6 +8,7 @@ import timber.log.Timber
 /**
  *  implementation 'com.jakewharton.timber:timber:5.0.1'
  */
+@Suppress("unused")
 object TimberUtil {
 
     const val format = "%-35s %-30s |"

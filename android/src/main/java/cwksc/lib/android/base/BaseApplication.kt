@@ -4,6 +4,7 @@ import android.app.Activity
 import android.app.Application
 import android.os.Bundle
 
+@Suppress("unused")
 open class BaseApplication : Application(), Application.ActivityLifecycleCallbacks {
 
     override fun onCreate() {

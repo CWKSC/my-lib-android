@@ -7,6 +7,7 @@ import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
 import androidx.recyclerview.widget.RecyclerView
 
+@Suppress("unused")
 data class SimpleRecyclerViewAdapter<CustomDataBinding : ViewDataBinding, Model>(
     private val layoutId: Int,
     val onBindView: OnBindViewScope<CustomDataBinding, Model>.() -> Unit = { },

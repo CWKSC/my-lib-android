@@ -14,6 +14,7 @@ import androidx.viewbinding.ViewBinding
  *     dataBinding true
  * }
  */
+@Suppress("unused")
 open class BindingActivity<CustomBinding : ViewBinding>(private val layoutId: Int) : AppCompatActivity() {
 
     lateinit var binding: CustomBinding
