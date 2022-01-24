@@ -1,4 +1,8 @@
 package cwksc.lib.app
 
-class Application  {
+import cwksc.lib.base.BaseApplication
+
+@Suppress("unused")
+class Application : BaseApplication() {
+
 }
