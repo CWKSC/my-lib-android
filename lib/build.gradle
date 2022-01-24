@@ -35,7 +35,7 @@ android {
     }
     libraryVariants.all { variant ->
         variant.outputs.all { output ->
-            def fileName = "cwksc.lib.android-${defaultConfig.versionName}.aar"
+            def fileName = "cwksc.lib-${defaultConfig.versionName}.aar"
             outputFileName = fileName
         }
     }
