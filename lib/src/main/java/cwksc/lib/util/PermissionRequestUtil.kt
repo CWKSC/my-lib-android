@@ -12,13 +12,11 @@ object PermissionRequestUtil {
     /**
      * For request permission one time only.
      *
-     * Use PermissionRequestUtil.callback to receive result
-     * e.g. PermissionRequestUtil.callback = { permission, result -> Log.d(permission, result.toString()) }
-     *
-     * if you want to request multiple permissions,
-     * please use request(ActivityResultCaller activity, String... manifestPermission)
      * Example:
      * PermissionRequestUtil.request(this, Manifest.permission.CAMERA)
+     *
+     * if you want to request multiple permissions,
+     * please use request(activity: ActivityResultCaller, vararg permissions: String, callback: (map: Map<String, Boolean>) -> Unit = { },
      */
     @JvmStatic
     fun request(
@@ -33,9 +31,6 @@ object PermissionRequestUtil {
 
     /**
      * For request permission multiple time.
-     *
-     * Use PermissionRequestUtil.callback to receive result
-     * e.g. PermissionRequestUtil.callback = { permission, result -> Log.d(permission, result.toString()) }
      *
      * Example:
      * PermissionRequestUtil.request(this,
