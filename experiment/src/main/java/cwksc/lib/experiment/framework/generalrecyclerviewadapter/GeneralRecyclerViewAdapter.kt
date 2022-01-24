@@ -1,5 +1,6 @@
 package cwksc.lib.experiment.framework.generalrecyclerviewadapter
 
+import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
@@ -14,6 +15,7 @@ class GeneralRecyclerViewAdapter : RecyclerView.Adapter<ViewHolder>() {
     }
 
     private lateinit var dataSet: List<Any>
+    @SuppressLint("NotifyDataSetChanged")
     fun setDataSet(dataSet: List<Any>) {
         this.dataSet = dataSet
         notifyDataSetChanged()
@@ -40,7 +42,8 @@ class GeneralRecyclerViewAdapter : RecyclerView.Adapter<ViewHolder>() {
         return ViewHolder(view, createBinding.call(view)!!)
     }
 
-    override fun onBindViewHolder(viewHolder: ViewHolder, position: Int) {
+    @SuppressLint("NotifyDataSetChanged")
+    override fun onBindViewHolder(viewHolder: ViewHolder, @SuppressLint("RecyclerView") position: Int) {
         val index = getItemViewType(position)
         val onBindView = itemConfigList[index].onBindView
         val model = dataSet[position]
