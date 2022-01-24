@@ -1,4 +1,4 @@
-package cwksc.lib
+package cwksc.lib.app
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("cwksc.lib", appContext.packageName)
+        assertEquals("cwksc.lib.app", appContext.packageName)
     }
 }

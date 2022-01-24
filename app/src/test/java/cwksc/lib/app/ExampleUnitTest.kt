@@ -1,4 +1,4 @@
-package cwksc.lib
+package cwksc.lib.app
 
 import org.junit.Test
 
